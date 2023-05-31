@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input fields</title>
+</head>
+<body>
+    <h1>Interazioni con l'utente</h1>
+    <form onsubmit="alert('Registrazione inviata!')">
+        <div>
+         <input 
+         type="text" 
+         placeholder="Nome" 
+         pattern="[aA-zZ-0-99]"
+         required
+         />
+        </div>
+        <div>
+         <input 
+         type="text" 
+         placeholder="Cognome" 
+         pattern="[aA-zZ-0-99]"
+         required
+         />
+        </div>
+         <div>
+            <input 
+            type="email" 
+            placeholder="Email"
+            required
+            />
+         </div>
+        <div>
+            <input 
+            type="password" 
+            placeholder="Password"
+            minlength="8"
+            maxlength="16"
+            required
+            />
+         </div>
+         
+        <div>
+        <label>Data di nascita:</label>
+         <input 
+         type="date"
+         required
+         />
+        </div>
+        <div>
+         <input 
+         type="number" 
+         placeholder="Numero di telefono" 
+         pattern="[0-99]"
+
+         required/>
+        </div>
+        
+        <fieldset>
+            <legend>Scegli la tua musica preferita</legend>
+            <div>
+                <input type="checkbox" />
+                <label > Jazz</label>
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label > Blues</label>
+
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <label> Classica</label>
+            </div>
+        </fieldset>
+         
+        <legend>Accettazione dei termini e condizioni:</legend>
+        <div>
+         <input type="radio"
+                required
+         />
+        </div>
+   
+         <button type="submit">Invia registrazione</button>
+    </form>    
+</body>
+</html>
